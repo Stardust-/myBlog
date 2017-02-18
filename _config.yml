@@ -1,0 +1,124 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Stardust Blog
+subtitle: The World Will Be Change
+description: "Cool Blog"
+author: Ran Jun
+language:
+timezone:
+
+# Site settings
+SEOTitle: 冉骏的博客 | Stardust bolg
+email: ranjun4366@gmail.com
+header-img: img/home-bg.jpg
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://ranjun.me
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: false # Open external links in new tab
+filename_case: 0
+render_drafts: true
+post_asset_folder: true
+relative_link: false
+future: false
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: false
+  tab_replace: &nbsp;&nbsp;&nbsp;&nbsp; 
+
+
+# SNS settings      
+github_username: Stardust-   
+zhihu_username: xing-chen-42-66
+facebook_username: "100008480530889"
+linkedin_username: "骏-冉-89a219109"
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+
+# Sidebar settings
+sidebar: true  #添加侧边栏
+sidebar-about-description: "如果时间还在，那么正好。"
+sidebar-avatar: img/portrait.png     #你的大头贴，请使用绝对地址.
+
+friends: [
+    {
+        title: "* 果姐姐:  notdeep",
+        href: "http://notdeep.github.io/"
+    },
+    {
+        title: "* 赛炮:  stpons",
+        href: "http://xiesaidong.me"
+    },
+    {
+        title: "* 我磊:  磊磊SAMA   ",
+        href: "https://879479119.github.io/"
+    },
+]
+
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: 8f64a87f380be6311f20a118e2b0e63b
+# Google Analytics
+ga_track_id: UA-80987537-2       # Format: UA-xxxxxx-xx
+ga_domain: ranjun.me
+
+
+# Duoshuo settings
+duoshuo_username: stardust4366
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true       
+
+# Featured Tags
+featured-tags: true  
+featured-condition-size: 0     # A tag will be featured if the size of it is more than this condition value
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 8
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: huxblog
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git 
+  repo: git@github.com:Stardust-/blog
+  branch: master
